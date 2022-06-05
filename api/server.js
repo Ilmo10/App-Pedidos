@@ -1,15 +1,10 @@
+const {produto} = require('./produtos')
+
 const express = require('express')
 const app = express()
 
-app.get('/:nome/:idade',function(recebendo, respondendo){
-
-    const nome = recebendo.params.nome
-    const idade = recebendo.params.idade
-    console.log(nome)
-    respondendo.json({
-        Nome: nome,
-        idade: idade
-    })
+app.get('/produto',function(recebendo, respondendo){
+    respondendo.json(produto)
 })
 
 app.listen(1010, function(req,res){
