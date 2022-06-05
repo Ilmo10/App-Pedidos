@@ -3,11 +3,13 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 font-family: 'Roboto', sans-serif;
+
 }
 .container{
 
 }
 .header{
+  padding: 0 10px;
   height: 50px;
   width: 100%;
   background:  #ccc;
@@ -19,31 +21,37 @@ font-family: 'Roboto', sans-serif;
   align-items: center;
 }
 .content{
-  margin-top: 50px;
+  margin: 50px 0;
   padding: 10px;
 }
 .produto{
   margin: 10px 0;
   padding: 5px;
   width: 100%;
+  border-radius: 3px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid #ccc;
 }
 .display{
-  width: 100px;
+  width: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 button{
+  -webkit-appearance: none;
   padding: 0;
-  width: 25px;
-  height: 25px;
+  width: 45px;
+  height: 45px;
   font-size: 20px;
   line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: none;
 }
 
 

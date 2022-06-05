@@ -4,7 +4,13 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 
-app.get('/produto', cors(), function(recebendo, respondendo){
+app.use(cors({
+    origin: '*'
+}))
+
+app.get('/produto', function(recebendo, respondendo){
+
+  respondendo.header("Access-Control-Allow-Methods", 'GET,PUT,POST,DELETE');
     respondendo.json(produto)
 })
 

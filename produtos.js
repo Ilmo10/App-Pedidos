@@ -3,14 +3,14 @@
   name: 'Pastel carne',
   description: 'salgado frito',
   type: 1,
-  value: 0.5
+  value: 500
 },
 {
   id: 2,
   name: 'Pastel queijo',
   description: 'salgado frito',
   type: 1,
-  value: 0.5
+  value: 500
 },
 {
   id: 3,
@@ -26,4 +26,3 @@
   type: 2,
   value: 400
 }] 
-module.exports = {produto}
