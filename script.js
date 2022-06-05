@@ -3,7 +3,7 @@ fetch('http://localhost:1010/produto')
     return response.json()
   })
   .then(function(data){
-   listaProdutos(data)
+    listaProdutos(data)
   })
   .catch(function(){
     console.log('Api não foi localizada')
