@@ -50,3 +50,20 @@ app.listen(1010, function(req,res){
     console.log('O server subiu!!')
 })
 ~~~
+
+### conectando Front-End na APi
+~~~Javascript
+fetch('http://localhost:1010/produto')
+  .then( function(response){
+    return response.json()
+  })
+  .then(function(data){
+   listaProdutos(data)
+  })
+  .catch(function(){
+    console.log('Api não foi localizada')
+  })
+  function listaProdutos(data){
+    console.log(data)
+  }
+~~~

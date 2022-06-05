@@ -2,8 +2,9 @@ const {produto} = require('./produtos')
 
 const express = require('express')
 const app = express()
+const cors = require('cors')
 
-app.get('/produto',function(recebendo, respondendo){
+app.get('/produto', cors(), function(recebendo, respondendo){
     respondendo.json(produto)
 })
 
