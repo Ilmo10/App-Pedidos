@@ -3,6 +3,7 @@
 
 - O projeto foi inciado com `npm init -y`.
 - Depois foi dado o `npm install express`.
+- foi instalado `npm install cors `
  
 
 ### criando servidor:
@@ -67,3 +68,4 @@ fetch('http://localhost:1010/produto')
     console.log(data)
   }
 ~~~
+
